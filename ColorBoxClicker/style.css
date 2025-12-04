@@ -67,6 +67,7 @@ h1 {
     padding: 10px 32px;
     background: grey;
     border: 3px solid black;
+    color: black;
 }
 
 .red {
@@ -91,21 +92,21 @@ h1 {
 }
 
 .red:hover {
-    border-radius: 25px;
+    border-radius: 30px;
     transform: scale(1.1);
     font-size: 30px;
     text-decoration: underline;
 }
 
 .green:hover {
-    border-radius: 25px;
+    border-radius: 30px;
     transform: scale(1.1);
     font-size: 30px;
     text-decoration: underline;
 }
 
 .blue:hover {
-    border-radius: 25px;
+    border-radius: 30px;
     transform: scale(1.1);
     font-size: 30px;
     text-decoration: underline;
