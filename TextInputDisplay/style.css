@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: darkgray;
+}
+
+.container{
+     display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: 2px solid #005E8F;
+    gap: 15px;
+    background-color: #267caa;
+    margin-bottom: 10px;
+}
+.container>div{
+    width: 500px;
+    overflow-y: auto;
+    height: 100px;
+    background: white;
+    padding: 10px;
+}
+textarea{
+    font-size: 16px;
+    overflow-y: auto;
+    padding: 10px;
+    height: 100px;
+}
+.buttons{
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+.buttons>button{
+   padding: 10px;
+
+}
