@@ -1,0 +1,50 @@
+body{
+    background-color: burlywood;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    border: 2px solid rgb(198, 55, 55);
+    padding: 15px;
+}
+
+.buttons>button{
+    padding: 10px 20px;
+    background: brown;
+    font-size: 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+.sectioncontainer{
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+      gap: 20px;
+}
+
+.sectioncontainer>div{
+    border: 2px double brown;
+    border-radius:  20px;
+    padding: 15px;
+    background-color: rgba(165, 42, 42, 0.5);
+  
+}
+.hide{
+    display: none;
+}
+.sectioncontainer>div>h4{
+    text-align: center;
+    color: white;
+    font-style: italic;
+    text-decoration: underline;
+}
