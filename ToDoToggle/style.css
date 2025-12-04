@@ -56,3 +56,9 @@ li {
     border-radius: 2px dotted black;
     text-decoration: none;
 }
+li:active{
+    
+background: grey;
+    text-decoration: line-through;
+
+}
