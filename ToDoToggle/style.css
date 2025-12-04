@@ -31,6 +31,7 @@ progress {
 
 .done {
     background: grey;
+    text-decoration: line-through;
 }
 
 button {
