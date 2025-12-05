@@ -37,6 +37,10 @@ bluebox.addEventListener("click", () => {
 })
 
 function resetclicks() {
+    arr.forEach(e=>{
+        e.textContent = ""
+        e.classList.remove("crown")
+    })
     red = blue = yellow = green = 0
     redtext.textContent = `Clicks : ${red}`
     yellowtext.textContent = `Clicks : ${yellow}`
