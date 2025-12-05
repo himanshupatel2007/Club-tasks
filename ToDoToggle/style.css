@@ -12,7 +12,7 @@ body {
 progress {
     width: 200px;
     height: 20px;
-    accent-color: #4CAF50;
+    accent-color: #150f63;
     border-radius: 5px;
 }
 
@@ -29,11 +29,11 @@ progress {
     gap: 15px;
 }
 
-.done {
+.donetask {
     background: grey;
     text-decoration: line-through;
+    list-style-image: url("./png/check.png" );
 }
-
 button {
     padding: 10px;
 }
@@ -41,24 +41,23 @@ button {
 h1 {
     text-decoration: underline;
 }
-
+span{
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
 ul {
     display: flex;
-justify-content: center;
-flex-direction: column;
-    list-style-type: none;
+    justify-content: center;
+    flex-direction: column;
 }
 
 li {
+    border-radius: 5px;
+    list-style-type: circle;
     padding: 5px;
     margin: 10px;
     background-color: rgb(235, 235, 235);
     border-radius: 2px dotted black;
     text-decoration: none;
-}
-li:active{
-    
-background: grey;
-    text-decoration: line-through;
-
 }
