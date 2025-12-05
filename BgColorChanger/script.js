@@ -15,9 +15,7 @@ function identifying(value) {
 }
 
 favourite.addEventListener("click", () => {
-
     localStorage.setItem("fav", themeclass.href)
-
 })
 
 
@@ -30,9 +28,7 @@ applyfavourite.addEventListener("click", () => {
 
 
 window.onload = () => {
-
-    if (LocalStorage.getItem("fav")) 
+    let saved = LocalStorage.getItem("fav")
+    if (saved) 
         applyfavourite.classList.remove("hideit")
-    
-
 }
