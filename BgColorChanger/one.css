@@ -1,4 +1,6 @@
 body{
+    background-color: #351894;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,10 +23,9 @@ body{
 .paragrapgh{
     border-radius: 15px;
     margin: 30px;
-    padding: 20px;
-    background-color: rgba(128, 128, 128, 0.57);
+    padding: 10px;
+    background-color: rgba(185, 185, 185, 0.57);
     width: 600px;
-    font-size: 1.1em;
 }
 .hideit{
     display: none;
@@ -36,6 +37,8 @@ gap: 15px;
 
 }
 button{
+    background: black;
+    color: white;
     padding: 10px 15px;
     font-weight: bold;
     border-radius: 10px;

@@ -8,7 +8,9 @@ body {
     background-color: rgb(255, 232, 203);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
+.hideit{
+    display: none;
+}
 progress {
     width: 200px;
     height: 20px;
