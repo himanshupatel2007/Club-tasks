@@ -3,7 +3,7 @@ let jumptofirst = document.querySelector(".jumptofirst")
 let next = document.querySelector(".Next")
 let previous = document.querySelector(".Previous")
 let displaybox = document.querySelector(".imagebox")
-let heading1 = document.querySelector("h1")
+let heading1 = document.querySelector("h3")
 
 
 let images = [
@@ -46,10 +46,7 @@ jusmptolast.addEventListener("click", () => {
 
 
 next.addEventListener("click", () => {
-    if (counter != 4)
-        previous.classList.remove("disable")
     counter++
-    counter = counter % 5;
     heading1.textContent = ""
     heading1.textContent = `Image ${counter + 1} of 5`
     displayimage(counter);
@@ -58,22 +55,19 @@ next.addEventListener("click", () => {
 
 
 previous.addEventListener("click", () => {
-    if (counter != 0)
-        previous.classList.remove("disable")
     counter--
-    if(counter<0)
-        counter = 4;
-    counter = counter % 5;
     heading1.textContent = ""
     heading1.textContent = `Image ${counter + 1} of 5`
     displayimage(counter);
     checking(counter)
 })
 function checking(counter) {
+     previous.disabled =  false
+     next.disabled = false
     if (counter == 0)
-        previous.classList.add("disable")
-    else if (counter == 4)
-        next.classList.add("disable")
+        previous.disabled =  true
+    if (counter == 4)
+        next.disabled = true
 }
 
 function displayimage(counter) {
@@ -83,6 +77,7 @@ function displayimage(counter) {
         else
             displaybox.classList.remove(e.color)
     })
+    checking(counter);
 };
 
 

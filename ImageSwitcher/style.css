@@ -6,32 +6,44 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: burlywood;
+    background-color: beige;
     
 }
+
 .imagecontainer{
-    
-    height: 100vh;
+    justify-content: center;
+    align-items: center;
+   gap: 15px;
     display: flex;
     flex-direction: column;
 }
 .imagebox{
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+
+}
+button{
+    font-weight: bold;
+    font-size: 1.1em;
+    border-radius: 5px;
+    background: grey;
+    padding: 10px 15px;
+    margin: 5px 10px;
 }
 
 .red{
-    background: red;
+    background: rgb(255, 35, 35);
 }
 .blue{
-    background: blue;
+    background: rgb(42, 42, 255);
 }
 .purple{
-    background: purple;
+    background: rgb(167, 2, 167);
 }
 .green{
-    background: green;
+    background: rgb(2, 178, 2);
 }
 .orange{
-    background: red;
+    background: rgb(250, 106, 10);
 }
