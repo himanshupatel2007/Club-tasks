@@ -11,6 +11,7 @@ let hobby = document.querySelector(".hobby")
 let heading = document.querySelector("h3")
 
 hideall.addEventListener("click", () => {
+
     sections.forEach(e => {
         e.classList.add("hide")
     })
@@ -21,6 +22,7 @@ hideall.addEventListener("click", () => {
     heading.textContent = `Sections Visible : ${visible}`
 })
 showall.addEventListener("click", () => {
+
     sections.forEach(e => {
         e.classList.remove("hide")
     })
@@ -32,49 +34,52 @@ showall.addEventListener("click", () => {
 })
 
 showbio.addEventListener("click", () => {
-    bio.classList.toggle("hide")
 
-    if (bio.classList.contains("hide")) {
+    if (showbio.textContent === "SHOW BIO") {
+        bio.classList.remove("hide")
         showbio.classList.add("clicked")
         showbio.textContent = "HIDE BIO"
         visible++;
     }
     else {
+        bio.classList.add("hide")
         showbio.classList.remove("clicked")
-        visible--
         showbio.textContent = "SHOW BIO"
+        visible--;
     }
     heading.textContent = `Sections Visible : ${visible}`
 })
 
 showhobby.addEventListener("click", () => {
-    hobby.classList.toggle("hide")
 
-    if (bio.classList.contains("hide")) {
+    if (showhobby.textContent === "SHOW HOBBY") {
+        hobby.classList.remove("hide")
         showhobby.classList.add("clicked")
         showhobby.textContent = "HIDE HOBBY"
         visible++;
     }
     else {
+        hobby.classList.add("hide")
         showhobby.classList.remove("clicked")
-        visible--
         showhobby.textContent = "SHOW HOBBY"
+        visible--;
     }
     heading.textContent = `Sections Visible : ${visible}`
 })
 
 showskills.addEventListener("click", () => {
-    skills.classList.toggle("hide")
 
-    if (skills.classList.contains("hide")) {
+     if (showskills.textContent === "SHOW SKILLS") {
+        skills.classList.remove("hide")
         showskills.classList.add("clicked")
         showskills.textContent = "HIDE SKILLS"
         visible++;
     }
     else {
+        skills.classList.add("hide")
         showskills.classList.remove("clicked")
-        visible--
         showskills.textContent = "SHOW SKILLS"
+        visible--;
     }
     heading.textContent = `Sections Visible : ${visible}`
 })
