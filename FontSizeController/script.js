@@ -20,11 +20,11 @@ decreasebtn.addEventListener("click", () => {
     updating(current);
 })
 
-smallbtn.addEventListener("click", updating(14))
-mediumbtn.addEventListener("click", updating(22))
-largebtn.addEventListener("click", updating(28))
-resetbtn.addEventListener("click", updating(16))
-rangeselector.addEventListener("input", updating(rangeselector.value))
+smallbtn.addEventListener("click", () => updating(14))
+mediumbtn.addEventListener("click", () => updating(22))
+largebtn.addEventListener("click", () => updating(28))
+resetbtn.addEventListener("click", () => updating(16))
+rangeselector.addEventListener("input", () => updating(rangeselector.value))
 
 
 let updatedvalue;
