@@ -38,4 +38,6 @@ clearbtn.addEventListener("click",() => {
     outputbox.innerHTML = "";
     count = 0;
     document.querySelector("h2").innerHTML = `Message Shown = 0`
+    selector.value = "0"
+
 })
